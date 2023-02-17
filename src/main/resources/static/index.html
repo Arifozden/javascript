@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobiletter</title>
+    <style>
+        #hoved {
+            width: 30%;
+            height: auto;
+            border: 3px solid darkolivegreen;
+        }
+    </style>
+
+</head>
+<body>
+<div id="hoved">
+    <h1>Bestilling av kinobiletter</h1>
+    Velg film:
+    <select id="select" style="height: 25px">
+        <div id="velgfilm"></div>
+        <option>Velg film her</option>
+        <option>Mission Impossible</option>
+        <option>Face Off</option>
+        <option>Skrik!</option>
+        <option>Green Mile</option>
+        <option>Rocky 4</option>
+    </select>
+    <br>
+    <table>
+        <br>
+        <tr>
+            <td>
+                Antall
+            </td>
+            <td>
+                <input id="Antall" type="number" value="" style="width: 35px" required>
+            </td>
+            <td>
+                <div id="divAntall"></div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>
+                Fornavn
+            </td>
+            <td>
+                <input id="Fornavn" type="text" value=""  required>
+            </td>
+            <td>
+                <div id="divFornavn"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Etternavn
+            </td>
+            <td>
+                <input id="Etternavn" type="text" value=""  required>
+            </td>
+            <td>
+                <div id="divEtternavn"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefonnr
+            </td>
+            <td>
+                <input id="Telefonnr" type="number" value=""  required>
+            </td>
+            <td>
+                <div id="divTelefonnr"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Epost
+            </td>
+            <td>
+                <input id="Epost" type="email" value="" required>
+            </td>
+            <td>
+                <div id="divEpost"></div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <button id="KjopBilett" onclick="Kjopbilett()">Kjøp bilett</button>
+            </td>
+        </tr>
+        <br>
+    </table>
+
+    <h2>Alle biletter</h2>
+    <div id="Skriv"></div>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <button id="Slett" onclick="SlettBilettene()"> Slett alle bi|lettene</button>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+</div>
+<script type="application/javascript" src="index.js">
+
+</script>
+
+</body>
+</html>
